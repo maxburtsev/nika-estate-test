@@ -1,0 +1,43 @@
+@import './css/normalize';
+@import './scss/base/colors';
+@import './scss/base/mixin';
+@import './scss/base/fonts';
+@import './scss/base/layout';
+@import './scss/base/form';
+@import './scss/base/libs';
+@import './scss/modules/call';
+@import './scss/modules/current';
+@import './scss/modules/flex';
+@import './scss/modules/grid';
+@import './scss/modules/float';
+body {
+    padding: 50px 0;
+    font-family: $genFont;
+    font-size: 14px;
+    background: #f4f4f4;
+    @media all and (max-width: 1050px) {
+        padding: 30px;
+    }
+}
+h2,p {
+    margin: 0;
+}
+
+.title {
+    font-family: $genFont;
+    letter-spacing: 1.6px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+.subtitle {
+    color: #7c7c7c;
+}
+.text {
+
+ }
+
+
+
+

@@ -1,0 +1,60 @@
+.float {
+ }
+.float__slider {
+    float: left;
+    width: 38%;
+    height: 338px;
+    overflow: hidden;
+    @media all and (max-width: 870px) {
+        float: none;
+        width: 100%;
+        height: 250px;
+    }
+    @media all and (max-width: 400px) {
+        height: 170px;
+    }
+}
+.float__information {
+    float: left;
+    width: 62%;
+    @media all and (max-width: 870px) {
+        float: none;
+        width: 100%;
+    }
+ }
+.float__bar { }
+.float__bar-item { 
+    float: left;
+    span {
+        display: block;
+        
+    }
+    &:not(:last-child) {
+        margin-right: 45px;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.clearfix-call { clear: both; }
+.float__call {
+    text-align: center;
+    .call-back__img {
+        float: left;
+     }
+    .call-back__text {
+        line-height: 48px;
+        text-align: center;
+     }
+    .call-back__link { 
+        float: right;
+        &:after {
+            left: 0;
+        }
+        &:before {
+            left: 0;
+        }
+    }
+ }
